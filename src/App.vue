@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-    <h1>Jiant</h1>
+    <Food/>
+    <Sport/>
+    <Display/>
   </div>
 </template>
 
 <script>
 
+import Food from './components/Food.vue'
+import Sport from './components/Sport.vue'
+import Display from './components/Display.vue'
+import { store } from './store/store'
+
 export default {
   name: 'App',
+  store,
   components: {
+    Food, Sport, Display
   }
 }
 </script>
